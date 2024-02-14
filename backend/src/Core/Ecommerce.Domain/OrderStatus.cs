@@ -9,8 +9,12 @@ namespace Ecommerce.Domain
     public enum OrderStatus
     {
         [EnumMember(Value = "Pendente")]
-        Pending,
-
-        
+        Pending, 
+        [EnumMember(Value = "O pagamento foi Recebido")]
+        Completed,
+        [EnumMember(Value = "O produto foi enviado")]
+        Enviado,
+        [EnumMember(Value = "Pendente")]
+        Error
     }
 }
