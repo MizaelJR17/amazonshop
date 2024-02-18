@@ -14,6 +14,7 @@ namespace Ecommerce.Domain
 
         public int ProductId { get; set; }
         
+        public virtual  Product? Product { get; set; }
         public string? PublicCode { get; set; }
         
     }
